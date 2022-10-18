@@ -10,8 +10,10 @@
         android:id="@+id/linearLayout"
         android:layout_width="300dp"
         android:layout_height="500dp"
-        android:background="#FFD740"
+        android:background="@color/silver"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,16 +24,18 @@
         android:id="@+id/topFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#4000F1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:background="@color/light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/bottomFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#4000F1"
+        android:background="@color/light_grey"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
